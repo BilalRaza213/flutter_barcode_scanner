@@ -25,6 +25,18 @@ class FlutterBarcodeScanner {
   /// be customized with the [cancelButtonText] string.
   static Future<String> scanBarcode(String lineColor, String cancelButtonText,
       bool isShowFlashIcon, ScanMode scanMode) async {
+    
+    setState()
+    {
+      print("Woooooorking");
+      ElevatedButton(
+        child: Text("My Button"),
+        style: ButtonStyle(
+          backgroundColor: Colors.purple,
+        ),
+      );
+    }
+    
     if (cancelButtonText.isEmpty) {
       cancelButtonText = 'Cancel';
     }
